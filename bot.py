@@ -51,7 +51,7 @@ async def HelpWatermark(bot, cmd):
 	await cmd.reply_text(
 		text=Config.USAGE_WATERMARK_ADDER,
 		parse_mode="Markdown",
-		reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/Amalbiju154"), InlineKeyboardButton("Support Group", url="https://t.me/Yeageristbots")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Animemusicarchive6")], [InlineKeyboardButton("Botlogs", url="https://t.me/watermarkbotlogs")]]),
+		reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/doreamonfans1"), InlineKeyboardButton("Support Group", url="https://t.me/disneyteamchat")], [InlineKeyboardButton("Bots Channel", url="https://t.me/disneygrou")], [InlineKeyboardButton("dev2", url="https://t.me/doreamonfans2")]]),
 		disable_web_page_preview=True
 	)
 
@@ -256,7 +256,7 @@ async def VidWatermarkAdder(bot, cmd):
 		duration = metadata.get('duration').seconds
 	the_media_file_name = os.path.basename(the_media)
 	main_file_name = os.path.splitext(the_media_file_name)[0]
-	output_vid = main_file_name + "_[" + str(cmd.from_user.id) + "]_[" + str(time.time()) + "]_[@AbirHasan2005]" + ".mp4"
+	output_vid = main_file_name + "_[" + str(cmd.from_user.id) + "]_[" + str(time.time()) + "]_[@doreamonfans1]" + ".mp4"
 	progress = Config.DOWN_PATH + "/WatermarkAdder/" + str(cmd.from_user.id) + "/progress.txt"
 	try:
 		# WOW! Nice XD
@@ -337,7 +337,7 @@ async def VidWatermarkAdder(bot, cmd):
 				await logs_msg.edit(text_edit, parse_mode="Markdown", disable_web_page_preview=True)
 		except Exception as e:
 			print(f"Error: {e}")
-			await editable.edit("Sorry, Something went wrong!\n\nCan't Upload to Streamtape. You can report at [Support Group](https://t.me/linux_repo).")
+			await editable.edit("Sorry, Something went wrong!\n\nCan't Upload to Streamtape. You can report at [Support Group](https://t.me/disneyteamchat).")
 			await logs_msg.edit(f"Got Error While Uploading to Streamtape!\n\nError: {e}")
 		await delete_all()
 		return
@@ -423,7 +423,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/Yeageristbots).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/disneyteamchat).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -446,7 +446,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/Yeageristbots).",
+					text="Something went Wrong. Contact my [Support Group](https://t.me/disneyteamchat).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -454,7 +454,7 @@ async def button(bot, cmd: CallbackQuery):
 		await cmd.message.edit(
 			text=Config.USAGE_WATERMARK_ADDER,
 			parse_mode="Markdown",
-			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/Amalbiju154"), InlineKeyboardButton("Support Group", url="https://t.me/Yeageristbots")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Animemusicarchive6")]]),
+			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/doreamonfans1"), InlineKeyboardButton("Support Group", url="https://t.me/disneyteamchat")], [InlineKeyboardButton("Bots Channel", url="https://t.me/disneygrou")]]),
 			disable_web_page_preview=True
 		)
 
@@ -471,7 +471,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/Yeageristbots).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/disneyteamchat).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -494,7 +494,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/Yeageristbots).",
+					text="Something went Wrong. Contact my [Support Group](https://t.me/disneyteamchat).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
