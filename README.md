@@ -1,5 +1,5 @@
 # Watermark-Bot
-A Telegram Video Watermark Adder Bot by [@doreamonfans1](https://t.me/doreamonfans1](https://github.com/disneyteam77)
+A Telegram Video Watermark Adder Bot by [@doreamonfans1](https://t.me/doreamonfans1)
 
 ## Features:
 - Save Custom Watermark Image.
